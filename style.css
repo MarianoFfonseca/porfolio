@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+:root {
+  font-family: 'Open Sans', Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y:scroll;
+  height: 100vh;
+}
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+}
+
+#home {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: rgb(23, 23, 23);
+  
+}
+
+.home-title {
+  font-size: 6em;
+  font-weight: 800;
+}
+
+.home-subtitle {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+#projects {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: rgb(23, 23, 23);
+  color: aliceblue;
+}
+.projectText {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 0 5% ;
+  
+}
+
+.projectText > h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+.videoSection {
+  width: 100%;
+  height: 100%;
+  border: #fff  solid;
+  border-width: 1px;
+}
