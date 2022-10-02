@@ -36,6 +36,7 @@ section {
 }
 
 #home {
+  position: relative;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -78,4 +79,13 @@ section {
   height: 100%;
   border: #fff  solid;
   border-width: 1px;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+}
+.videoSection > img {
+  max-width: 100%;
+  object-position: center;
+  object-fit: cover;
+
 }
